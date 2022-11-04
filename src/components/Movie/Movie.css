@@ -1,0 +1,114 @@
+.movies__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 454px;
+  box-shadow: 2px 3px 6px 4px rgba(128, 128, 128, 0.4);
+  height: 340px;
+}
+
+.movies__img img {
+  width: 183px;
+  height: 100%;
+}
+
+.movies__info {
+  position: relative;
+  margin: 12px 20px 10px 20px;
+  text-align: left;
+  min-width: 231px;
+}
+
+.movies__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  max-width: 215px;
+}
+
+.movies__date {
+  color: #827e7e;
+  margin: 7px 0px;
+}
+
+.movies__genre {
+  display: inline-block;
+  margin-right: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  padding: 3px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 6px;
+}
+
+.movies__score {
+  border-radius: 100%;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0px;
+  right: -15px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+.movies__article {
+  height: 129px;
+  margin: 7px 0px;
+}
+
+.movies__rate {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+@media (max-width: 420px) {
+  .movies__wrapper {
+    width: 387px;
+    height: 280px;
+    display: block;
+    padding: 6px 10px 15px 10px;
+    position: relative;
+  }
+
+  .movies__img img {
+    width: 60px;
+    height: 91px;
+  }
+
+  .movies__img {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 60px;
+    height: 91px;
+  }
+
+  .movies__info {
+    margin: 0;
+    position: static;
+  }
+
+  .movies__title {
+    margin-left: 73px;
+    max-width: 270px;
+    line-height: 24px;
+  }
+
+  .movies__genres,
+  .movies__date {
+    margin-left: 73px;
+  }
+
+  .movies__rate {
+    bottom: 10px;
+    left: 160px;
+  }
+
+  .movies__score {
+    top: 5px;
+    right: 0px;
+  }
+}

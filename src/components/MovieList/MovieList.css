@@ -1,0 +1,38 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movies__list {
+  margin: 32px 0;
+}
+
+.movies__alert,
+.movies__loading {
+  margin: 32px auto;
+}
+
+.movies__loading {
+  max-width: 120px;
+}
+
+.movies__grid {
+  width: 1010px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 454px);
+  gap: 36px;
+}
+
+@media (max-width: 420px) {
+  .movies__grid {
+    width: 420px;
+    grid-template-columns: repeat(1, 387px);
+    gap: 20px;
+  }
+
+  .movies__list {
+    margin: 10px 0 20px 0;
+  }
+}

@@ -1,0 +1,34 @@
+.movies {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.movies__container .ant-alert {
+  margin: 8px auto;
+}
+
+.movies__tabs .ant-tabs-nav {
+  width: 140px;
+  margin: 0 auto 17px auto;
+}
+
+.movies__offline {
+  font-size: 60px;
+  line-height: 80px;
+  margin: 60px auto;
+}
+.movies__pagination {
+  margin: 0 auto;
+  padding-bottom: 18px;
+  max-width: 450px;
+}
+
+@media (max-width: 420px) {
+  .movies {
+    width: 92%;
+  }
+
+  .movies__pagination {
+    max-width: 320px;
+  }
+}
